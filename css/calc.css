@@ -1,0 +1,49 @@
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: #191919;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.formulario {
+	width: 300px;
+	padding: 20px;
+}
+
+.tela{
+	width: 250px;
+	height: 40px;
+	padding: 10px;
+	border: 3 solid #f7f7f7;
+	border-radius: 16px;
+	margin: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+	color: #191919;
+}
+
+.tela ::placeholder{
+	color: #001;
+}
+
+input {
+	width:  60px;
+	height: 50px;
+	margin: 4px;
+	border-radius: 16px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.btn_limpar {
+	width: 260px;
+}

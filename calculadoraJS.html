@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculadora JavaScript</title>
+		<link rel="stylesheet" href="css/calc.css">
+        <script type="text/javascript" src="js/calc.js"></script>
+    </head>
+    <body>
+        
+	<div class="container">
+		<!-- INICIO DO FORMULARIO-->
+        <form class="formulario" name="form_calc"> <center><!-- INICIO CENTER - ESSA TAG É APENAS PARA COLOCAR A CALCULADORA NO CENTRO -->
+        <table class="tabela"> <!-- TABELA PRINCIPAL-->
+			<input  autofocus placeholder="0" class="tela" type="number" id="visor" name="visor"> <!-- INPUT PARA A TELA DA CALCULADORA-->
+			<br>
+			
+						<!-- TECLADO DA CALCULADORA -->
+			<table>
+					<input type="button" value="7" name="btn_7" onclick="botao(value)">
+					<input type="button" value="8" name="btn_8" onclick="botao(value)">
+					<input type="button" value="9" name="btn_9" onclick="botao(value)">
+					<input type="button" value="-" name="btn_subt" onclick="btn_calc(value)"> 
+			</table >
+			<table>
+					<input type="button" value="4" name="btn_4" onclick="botao(value)">
+					<input type="button" value="5" name="btn_5" onclick="botao(value)">
+					<input type="button" value="6" name="btn_6" onclick="botao(value)">
+					<input type="button" value="+" name="btn_soma" onclick="btn_calc(value)">
+			</table>
+			<table>
+					<input type="button" value="1" name="btn_3" onclick="botao(value)">
+					<input type="button" value="2" name="btn_2" onclick="botao(value)">
+					<input type="button" value="3" name="btn_1" onclick="botao(value)">
+					<input type="button" value="*" name="btn_mult" onclick="btn_calc(value)">
+			</table>		
+			<table>
+					<input type="button" value="0" name="btn_0" onclick="botao(value)">
+					<input type="button" value="." name="btn_ponto" onclick="Ponto(value)">
+					<input type="button" value="=" name="btn_igual" onclick="btn_calc(value)">
+					<input type="button" value="/" name="btn_divi" onclick="btn_calc(value)">
+					
+			</table>	
+					<!-- BOTAO PARA LIMPAR A TELA-->
+					<input class="btn_limpar" type="button" value="Limpar" name="btn_limpar" onclick="limpar()">
+			</table>
+			<!-- FIM TABELA PRINCIPAL-->
+		</center>
+		<!-- FIM DO CENTER-->
+        </form>    
+        <!-- FIM DO FORMULARIO-->
+				</div>
+    </body>
+</html>
